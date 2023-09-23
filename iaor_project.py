@@ -1,10 +1,13 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import easygui
 
-# Load the image        ## if u can change the variables names would be better##
-# choose all the image we have ##
-# use for loop to load all the images##
+######################################################TASK 1######################################################
+
+# Read our given image and store it in a variable called image
+
+
 image_path = r'C:\Users\LENOVO\Desktop\Weimar Digital Engineering\IGOR\project\Cracks\20230918_133059.jpg'
 image = cv2.imread(image_path)
 
