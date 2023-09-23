@@ -1,20 +1,19 @@
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the image        ## if u can change the variables names would be better##
-                        ## choose all the image we have ##
-                        ## use for loop to load all the images##
-image_path = r'C:\Users\LENOVO\Desktop\Weimar Digital Engineering\IAOR\project\Cracks\20230918_133059.jpg'
+# choose all the image we have ##
+# use for loop to load all the images##
+image_path = r'C:\Users\LENOVO\Desktop\Weimar Digital Engineering\IGOR\project\Cracks\20230918_133059.jpg'
 image = cv2.imread(image_path)
 
 # Convert the image to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-                ## try to make the background white and the crack white##
-                ## use the code we used in assignment 1 and change the min, max values##
-threshold_value = 70            # use different values of thresholding
+# try to make the background white and the crack white##
+# use the code we used in assignment 1 and change the min, max values##
+threshold_value = 70  # use different values of thresholding
 _, thresholded_image = cv2.threshold(gray_image, threshold_value, 255, cv2.THRESH_BINARY)
 
 # Perform post-processing (optional)
@@ -34,8 +33,7 @@ plt.title('Crack Segmentation')
 
 plt.show()
 
-
-                        ### try to fix this. im not sure if what i have done is correct##
+# try to fix this. im not sure if what I have done is correct##
 # Perform connected component analysis
 num_labels, labeled_image = cv2.connectedComponents(thresholded_image)
 
