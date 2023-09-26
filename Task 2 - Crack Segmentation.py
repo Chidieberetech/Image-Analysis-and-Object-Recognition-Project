@@ -32,7 +32,7 @@ def segment_cracks(image_path):
 # Directory containing images
 
 #change the path accordingly 
-image_dir = r'D:\001 - Summer Semester 2023\04.Image Analysis and Object Recognition\Final Project\Image-Analysis-and-Object-Recognition-Project\CrackSegmentationImages'
+image_dir = r'C:\Users\mitre\Documents\Bauhaus University Weimar\IAOR 2023\IAOR 2023 Project\Task1–Data Engineering'
 
 # List to store results
 results = []
